@@ -153,6 +153,30 @@ if (idadeAcesso >= 18 && possuiCadastro && !bloqueadoAcesso) {
     console.log("Acesso negado");
 }
 
-console.warn("Atenção");
-console.error("Erro de teste");
-console.log(valorInexistente);
+
+const cliente = "Heitor";
+const valorPedido = 250;
+const prioridadePedido = "alta";
+const pedidoAtrasado = true;
+
+let descontoPedido = 0;
+
+if (valorPedido > 200) {
+    descontoPedido = valorPedido * 10 / 100;
+}
+
+const valorFinalPedido = valorPedido - descontoPedido;
+
+let situacaoPedido;
+
+if (prioridadePedido === "alta" && pedidoAtrasado) {
+    situacaoPedido = "ATENÇÃO IMEDIATA";
+} else {
+    situacaoPedido = "Acompanhamento normal";
+}
+
+console.log(`Cliente: ${cliente}`);
+console.log(`Valor do pedido: R$ ${valorPedido}`);
+console.log(`Desconto: R$ ${descontoPedido}`);
+console.log(`Valor final: R$ ${valorFinalPedido}`);
+console.log(`Situação: ${situacaoPedido}`);
