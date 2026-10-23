@@ -275,3 +275,12 @@ const total = subtotal - desconto;
 console.log(`Subtotal: R$ ${subtotal}`);
 console.log(`Desconto: R$ ${desconto}`);
 console.log(`Total: R$ ${total}`);
+
+function calcularMedia(nota1, nota2, nota3) {
+    const total = nota1 + nota2 + nota3;
+    const media = total / 3;
+
+    return media;
+}   
+
+console.log(calcularMedia(70, 80, 90)); 
