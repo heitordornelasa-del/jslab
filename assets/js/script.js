@@ -97,3 +97,62 @@ console.log(`Disponível: ${disponivel}`);
 console.log(typeof nomeProduto);
 console.log(typeof precoProduto);
 console.log(typeof disponivel);
+
+
+const nota = 75;
+
+if (nota >= 60) {
+    console.log("Aprovado");
+}
+
+const notaFinal = 55;
+
+if (notaFinal >= 60) {
+    console.log("Aprovado");
+} else {
+    console.log("Reprovado");
+}
+
+const notaClassificacao = 82;
+
+if (notaClassificacao >= 90) {
+    console.log("Excelente");
+} else if (notaClassificacao >= 75) {
+    console.log("Muito bom");
+} else if (notaClassificacao >= 60) {
+    console.log("Aprovado");
+} else {
+    console.log("Reprovado");
+}
+
+const notaAluno = 70;
+const frequencia = 80;
+
+if (notaAluno >= 60 && frequencia >= 75) {
+    console.log("Aluno aprovado");
+} else {
+    console.log("Aluno não aprovado");
+}
+
+const prioridade = "alta";
+const atrasado = true;
+
+if (prioridade === "alta" && atrasado) {
+    console.log("ATENÇÃO IMEDIATA");
+} else {
+    console.log("Acompanhamento normal");
+}
+
+const idadeAcesso = 20;
+const possuiCadastro = true;
+const bloqueadoAcesso = false;
+
+if (idadeAcesso >= 18 && possuiCadastro && !bloqueadoAcesso) {
+    console.log("Acesso permitido");
+} else {
+    console.log("Acesso negado");
+}
+
+console.warn("Atenção");
+console.error("Erro de teste");
+console.log(valorInexistente);
