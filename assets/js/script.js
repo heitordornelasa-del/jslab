@@ -28,14 +28,6 @@ const preco = 120;
 const quantidade = 3;
 const percentualDesconto = 10;
 
-const subtotal = preco * quantidade;
-const desconto = subtotal * percentualDesconto / 100;
-const total = subtotal - desconto;
-
-console.log(`Subtotal: ${subtotal}`);
-console.log(`Desconto: ${desconto}`);
-console.log(`Total: ${total}`);
-
 const a = 10;
 const b = 3;
 
@@ -216,3 +208,70 @@ for (let i = 10; i >= 1; i--) {
 }
 
 console.log("Fim"); 
+
+function exibirSaudacao() {
+    console.log("Olá!");
+}
+
+exibirSaudacao();
+
+function exibirNome(nome) {
+    console.log(`Olá, ${nome}!`);
+}
+
+exibirNome("Marina");
+exibirNome("Carlos");
+exibirNome("João");
+
+function calcularTotal(preco, quantidade) {
+    return preco * quantidade;
+}
+
+const totalPedido = calcularTotal(50, 3);
+
+console.log(totalPedido);
+
+function verificarSituacao(nota, frequencia) {
+    if (nota >= 60 && frequencia >= 75) {
+        return "Aprovado";
+    } else {
+        return "Reprovado";
+    }
+}
+
+console.log(verificarSituacao(80, 90));
+console.log(verificarSituacao(50, 90));
+console.log(verificarSituacao(80, 60));
+
+function calcular() {
+    const resultado = 10 + 20;
+    console.log(resultado);
+}
+
+calcular();
+
+function somar(a, b) {
+    return a + b;
+}
+
+const somarArrow = (a, b) => {
+    return a + b;
+};
+
+const somarCurta = (a, b) => a + b;
+
+console.log(somar(2, 3));
+console.log(somarArrow(2, 3));
+console.log(somarCurta(2, 3));
+
+function calcularDesconto(valor, percentual) {
+    return valor * percentual / 100;
+}
+
+const subtotal = 200;
+const desconto = calcularDesconto(subtotal, 10);
+const total = subtotal - desconto;
+
+console.log(`Subtotal: R$ ${subtotal}`);
+console.log(`Desconto: R$ ${desconto}`);
+console.log(`Total: R$ ${total}`);
