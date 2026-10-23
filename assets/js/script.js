@@ -284,3 +284,65 @@ function calcularMedia(nota1, nota2, nota3) {
 }   
 
 console.log(calcularMedia(70, 80, 90)); 
+
+function exibirTabuada(numero) {
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${numero} x ${i} = ${numero * i}`);
+    }
+}
+
+exibirTabuada(5);
+exibirTabuada(7);
+
+function classificarTemperatura(temperatura) {
+    if (temperatura < 10) {
+        return "Muito frio";
+    } else if (temperatura < 18) {
+        return "Frio";
+    } else if (temperatura < 26) {
+        return "Agradável";
+    } else if (temperatura < 32) {
+        return "Quente";
+    } else {
+        return "Muito quente";
+    }
+}
+
+console.log(classificarTemperatura(5));
+console.log(classificarTemperatura(15));
+console.log(classificarTemperatura(22));
+console.log(classificarTemperatura(29));
+console.log(classificarTemperatura(35));
+
+function calcularSubtotal(preco, quantidade) {
+    return preco * quantidade;
+}
+
+function calcularDesconto(valor, percentual) {
+    return valor * percentual / 100;
+}
+
+function calcularTotal(subtotal, desconto) {
+    return subtotal - desconto;
+}
+
+function classificarPedido(total) {
+    if (total >= 200) {
+        return "Pedido grande";
+    } else {
+        return "Pedido comum";
+    }
+}
+
+for (let i = 1; i <= 3; i++) {
+    const subtotal = calcularSubtotal(80, i);
+    const desconto = calcularDesconto(subtotal, 10);
+    const total = calcularTotal(subtotal, desconto);
+    const classificacao = classificarPedido(total);
+
+    console.log(`Pedido ${i}`);
+    console.log(`Subtotal: R$ ${subtotal.toFixed(2)}`);
+    console.log(`Desconto: R$ ${desconto.toFixed(2)}`);
+    console.log(`Total: R$ ${total.toFixed(2)}`);
+    console.log(`Classificação: ${classificacao}`);
+}
