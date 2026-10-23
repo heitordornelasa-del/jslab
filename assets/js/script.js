@@ -180,3 +180,39 @@ console.log(`Valor do pedido: R$ ${valorPedido}`);
 console.log(`Desconto: R$ ${descontoPedido}`);
 console.log(`Valor final: R$ ${valorFinalPedido}`);
 console.log(`Situação: ${situacaoPedido}`);
+
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+for (let i = 2; i <= 10; i += 2) {
+    console.log(i);
+}
+let soma = 0;
+
+for (let i = 1; i <= 5; i++) {
+    soma = soma + i;
+}
+
+console.log(soma);
+for (let i = 1; i <= 20; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
+let contador = 1;
+
+while (contador <= 5) {
+    console.log(contador);
+    contador++;
+}
+const quantidadePedidos = 8;
+
+for (let i = 1; i <= quantidadePedidos; i++) {
+    console.log(`Processando pedido ${i}`);
+}
+for (let i = 10; i >= 1; i--) {
+    console.log(i);
+}
+
+console.log("Fim"); 
